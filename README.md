@@ -4,7 +4,7 @@ Amazon GuardDuty is a continuous security monitoring service that analyzes and p
 
 ## Structure
 
-follwing are the resources that guardduty requires.
+following are the resources that guardduty requires.
 
 ### Guardduty-detector
 
@@ -12,10 +12,8 @@ We are creating a `Guardduty-detector`,The `aws_guardduty_detector` resource spe
 
 ### S3 bucket
 
-we are creating a `s3-bucket`,with the name `spanio-gaurdduty-information` the s3 bucket consists of a file name `spanio-guardduty-threat-list` this file will consist of known malicious IP addresses currently this list consists of the ip address `10.0.0.0/8` as we need to give aleast one ip address.This bucket is encrypted using default aws/s3 AWS KMS master key
+we are creating a `s3-bucket`,with the name `spanio-gaurdduty-information` this s3 bucket consists of a file named `spanio-guardduty-threat-list` this file will consist of known malicious IP addresses currently this list consists of the ip address `10.0.0.0/8` as we need to give aleast one ip address.This bucket is encrypted using default aws/s3 AWS KMS master key
 
 ### Guardduty
 
 we are creating guardduty with the name `spanio-guardduty`.
-
-
